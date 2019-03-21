@@ -1,19 +1,13 @@
 .projetos {
     background-color: $color-primary;
-    grid-column: full-start / center-end;
-    margin: 15rem 0;
+    grid-column: center-start / center-end;
+    margin: 15rem 2rem;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     grid-gap: 6rem;
 }
 
-.titulo1 {
-    font-weight: 300;
-    font-size: 5rem;
-    margin-left: 57rem;
-    margin-top: 3rem;
-}
 
 .projeto {
     display: grid;
@@ -41,8 +35,8 @@
 
         width: 50%;
         justify-self: center;
-        font-family: $font-primary;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        text-decoration: none;
         text-align: center;
         padding: .2rem;
         background-color: #34495e;
@@ -57,4 +51,11 @@
             background-color: #28394b;
         }
     }
+}
+
+footer {
+    display: grid;
+    grid-column: 1 / -1;
+    font-size: 2rem;
+    background-color: #111;
 }

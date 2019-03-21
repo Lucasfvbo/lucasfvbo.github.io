@@ -37,9 +37,9 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: [barra-start] 4.5rem [barra-end] 86vh min-content 31vw 5vh; 
+    grid-template-rows: 4rem 80vh; 
 
-    grid-template-columns: 7.5rem [full-start] minmax(6rem, 1fr) [center-start] repeat(8, 
+    grid-template-columns: [full-start] 1fr [center-start] repeat(8, 
     [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 
 }
@@ -98,25 +98,8 @@ body {
     }
 
     50% {
-        transform: scale(1.4);
-    }
-
-    100% {
-        transform: scale(1);
-        box-shadow: none;
-    }
-
-}
-
-@keyframes pulsate1 {
-
-    0% {
-        transform: scale(1);
-        box-shadow: none;
-    }
-
-    50% {
-        transform: scale(1.1);
+        transform: scale(1.15);
+        color: rgb(25, 25, 216);
     }
 
     100% {

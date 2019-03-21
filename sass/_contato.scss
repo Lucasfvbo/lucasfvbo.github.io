@@ -1,24 +1,14 @@
-.btn-contato {
-    margin-top: -1rem;
-    display: inline-block;
-    position: relative;
-    margin-left: 59rem;
-    font-size: 5rem;
-    border: none;
-    color: #599ee4;
-    cursor: pointer;
-    transition: all .2s;
-    animation: pulsate1 1s infinite;
-}
+
 .contato {
 
     &__card {
         background-color: $color-primary;
-        grid-column: full-start / col-end 3;
+        grid-column: center-start / col-end 3;
 
-        box-shadow: $box;
 
+        margin-bottom: 3rem;
         &--h-a {
+            color: #ddd;
             font-weight: 400;
             margin: 2rem;
             font-size: 1.5rem;
@@ -28,6 +18,7 @@
         }
 
         &--t-a {
+            color: #ddd;
             margin: 3rem 1.5rem;
             font-size: 1.3rem;
             line-height: 2rem;
@@ -38,11 +29,13 @@
     }
 
     &__text {
+        margin-bottom: 3rem;
         grid-column: col-end 3 / 11;
     }
 }
 
 .text {
+    font-weight: 400;
     font-size: 2.7rem;
    text-align: center;
    color: #ddd; 
