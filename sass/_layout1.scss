@@ -1,0 +1,101 @@
+.barra {
+    background-color: $color-primary;
+    grid-column: 1 / -1;
+    grid-row: barra-start / barra-end;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    margin-top: -.6rem;
+    margin-right: 10rem;
+    float: right;
+}
+
+.nav li {
+
+    list-style: none;
+    display: inline-block;
+}
+
+.nav li a {
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 300;
+    display: block;
+    overflow: hidden;
+    transition: all 0.7s;
+    padding: 1.4rem 2rem;
+    text-transform: uppercase;
+}
+
+.nav li a:before {
+    content: "";
+    width: 6rem;
+    position: absolute;
+    border-bottom: .2rem solid #fff;
+    bottom: 0;
+    right: 30rem;
+    transition: all 0.7s;
+}
+
+.nav li a:hover:before {
+    right: 0;
+}
+
+.social {
+
+    background-color: $color-primary;
+    grid-row: 2 / -1;
+    grid-column: 1 / 1;
+
+    margin-top: 11rem;
+    position: fixed;
+    
+    & > * {
+        cursor: pointer;
+        margin-top: 3rem;
+        margin-left: 2.25rem;
+    }
+
+    &__icon-box {
+        position: relative;
+        font-size: 2.5rem;
+    }
+    
+    &__icon { 
+      
+        &--2 {
+            color: #34af23;
+        }
+
+        &--1 {
+            color: #517fa4;
+        }
+
+        &--3 {
+            color: #007bb6;
+        }
+    }
+}
+
+.footer {
+    background-color: $color-primary;
+    grid-row: 2 / -1;
+    grid-column: 11 / full-end;
+
+    &--copyright {
+
+        font-weight: 700;
+        position: fixed;
+        margin-left: 3rem;
+        margin-top: 10rem;
+        letter-spacing: .5rem;
+        transform: rotate(180deg);
+        writing-mode: vertical-rl;
+        font-size: 1.1rem;
+    }
+}
+

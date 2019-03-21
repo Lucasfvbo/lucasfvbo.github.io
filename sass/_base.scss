@@ -1,0 +1,128 @@
+$color-primary: rgb(56, 56, 56);
+$color-secondary: #56585a;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$box: 0 0 1rem .4rem #34495e;
+
+
+// FONT VARIABLES
+$font-primary: 'Lato', sans-serif;
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    background-color: $color-primary;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: $font-primary;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: [barra-start] 4.5rem [barra-end] 86vh min-content 31vw 5vh; 
+
+    grid-template-columns: 7.5rem [full-start] minmax(6rem, 1fr) [center-start] repeat(8, 
+    [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+}
+
+// ANIMAÇÕES
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes pulsate {
+
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+}
+
+@keyframes pulsate1 {
+
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+}
+

@@ -1,0 +1,94 @@
+.btn-contato {
+    margin-top: -1rem;
+    display: inline-block;
+    position: relative;
+    margin-left: 59rem;
+    font-size: 5rem;
+    border: none;
+    color: #599ee4;
+    cursor: pointer;
+    transition: all .2s;
+    animation: pulsate1 1s infinite;
+}
+.contato {
+
+    &__card {
+        background-color: $color-primary;
+        grid-column: full-start / col-end 3;
+
+        box-shadow: $box;
+
+        &--h-a {
+            font-weight: 400;
+            margin: 2rem;
+            font-size: 1.5rem;
+            letter-spacing: .4rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        &--t-a {
+            margin: 3rem 1.5rem;
+            font-size: 1.3rem;
+            line-height: 2rem;
+            font-weight: 700;
+            letter-spacing: .2rem;
+            text-align: center;
+        }
+    }
+
+    &__text {
+        grid-column: col-end 3 / 11;
+    }
+}
+
+.text {
+    font-size: 2.7rem;
+   text-align: center;
+   color: #ddd; 
+}
+
+.form {
+    max-width: 55rem;
+    margin: auto;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+.form1 {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1.6rem 0;
+    border: 0;
+    background-color: #111;
+    padding: 2rem 4rem;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+.form1:focus {
+    box-shadow: 0 0 1rem .4rem #34495e;
+}
+
+textarea.form1 {
+    resize: none;
+    height: 12rem;
+}
+
+.cta {
+    font-size: 1.6rem;
+    margin-top: -.8rem;
+    float: right;
+    border: 0;
+    background-color: #34495e;
+    color: #fff;
+    padding: 1.2rem 6rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cta:hover {
+    background-color: #2980b9;
+}
