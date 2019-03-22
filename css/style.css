@@ -15,9 +15,12 @@ html {
   @media only screen and (max-width: 50em) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 43em) {
+  @media only screen and (max-width: 45em) {
     html {
       font-size: 45%; } }
+  @media only screen and (max-width: 30.2em) {
+    html {
+      font-size: 40%; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -29,6 +32,10 @@ body {
   display: grid;
   grid-template-rows: 3rem 90vh;
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  @media only screen and (max-width: 30.2em) {
+    .container {
+      display: grid;
+      grid-template-rows: 3rem 70vh; } }
 
 footer {
   display: flex;
@@ -97,6 +104,10 @@ footer {
     font-weight: 100;
     animation: moveInRight 1.6s;
     animation-delay: .1s; }
+    @media only screen and (max-width: 30.2em) {
+      .header__title {
+        font-size: 6rem;
+        margin-left: 2rem; } }
   .header__sub-title {
     margin-top: 15rem;
     display: flex;
@@ -109,10 +120,10 @@ footer {
     font-weight: 700;
     animation: moveInLeft 1.6s;
     animation-delay: .1s; }
-    @media only screen and (max-width: 43em) {
+    @media only screen and (max-width: 45em) {
       .header__sub-title {
         margin-left: 0; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 30.2em) {
       .header__sub-title {
         margin-left: 2rem; } }
   .header__btn {
@@ -137,10 +148,10 @@ footer {
     @media only screen and (max-width: 57em) {
       .header__social {
         margin-right: -7rem; } }
-    @media only screen and (max-width: 43em) {
+    @media only screen and (max-width: 45em) {
       .header__social {
         margin-right: 0; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 30.2em) {
       .header__social {
         margin-right: 2rem; } }
     .header__social > * {
@@ -235,6 +246,9 @@ textarea.form1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   grid-gap: 6rem; }
+  @media only screen and (max-width: 30.2em) {
+    .projetos {
+      margin: 5rem .5rem; } }
 
 .projeto {
   display: grid;

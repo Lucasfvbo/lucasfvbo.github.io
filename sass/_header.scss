@@ -25,6 +25,11 @@
     
         animation: moveInRight 1.6s;
         animation-delay: .1s;
+
+        @media only screen  and (max-width: $bp-mobile) {
+            font-size: 6rem;
+            margin-left: 2rem;
+        }
     }
 
     &__sub-title {
@@ -47,6 +52,7 @@
 
         @media only screen  and (max-width: $bp-mobile) {
             margin-left: 2rem; 
+
         }
     }
 

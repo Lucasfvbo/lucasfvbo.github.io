@@ -12,11 +12,11 @@ $font-primary: 'Lato', sans-serif;
 
 // MEDIA QUERIES
 
-$bp-medium: 69em;
-$bp-medium-small: 57em;
-$bp-small: 50em;
-$bp-smaller: 43em;
-$bp-mobile: 25em;
+$bp-medium: 69em; //  1104px
+$bp-medium-small: 57em; // 912px
+$bp-small: 50em; // 800px
+$bp-smaller: 45em; // 720px
+$bp-mobile: 30.2em; // 482px
 
 
 *,
@@ -43,6 +43,10 @@ html {
     @media only screen  and (max-width: $bp-smaller) {
         font-size: 45%;
     }
+
+    @media only screen  and (max-width: $bp-mobile) {
+        font-size: 40%;
+    }
 }
 
 
@@ -60,6 +64,11 @@ body {
 
     grid-template-columns: [full-start] 1fr [center-start] repeat(8, 
     [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+    @media only screen  and (max-width: $bp-mobile) {
+        display: grid;
+        grid-template-rows: 3rem 70vh;
+    }
 
 }
 
