@@ -9,6 +9,15 @@ html {
   background-color: #383838;
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 69em) {
+    html {
+      font-size: 56%; } }
+  @media only screen and (max-width: 50em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 43em) {
+    html {
+      font-size: 45%; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -18,8 +27,15 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 4rem 80vh;
+  grid-template-rows: 3rem 90vh;
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+footer {
+  display: flex;
+  grid-row: 7rem;
+  grid-column: 1 / -1;
+  font-size: 1.2rem;
+  background-color: #111; }
 
 @keyframes moveInLeft {
   0% {
@@ -54,41 +70,25 @@ body {
     transform: scale(1);
     box-shadow: none; }
   50% {
-    transform: scale(1.15);
+    transform: scale(1.1);
     color: #1919d8; }
   100% {
     transform: scale(1);
     box-shadow: none; } }
 
-.social {
-  display: flex;
-  align-items: start;
-  justify-content: end;
-  margin-right: -20rem; }
-  .social > * {
-    cursor: pointer;
-    margin-top: 2rem;
-    margin-left: 5rem; }
-  .social__icon-box {
-    animation: pulsate 1s infinite;
-    font-size: 2.5rem; }
-  .social__icon--2 {
-    color: #34af23; }
-  .social__icon--1 {
-    color: #517fa4; }
-  .social__icon--3 {
-    color: #007bb6; }
-
 .header {
   grid-column: full-start / full-end;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/my.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/my-min.jpg);
   background-size: cover;
   background-position: center;
   display: grid;
-  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-rows: min-content 1fr min-content minmax(6rem, min-content) 1fr;
   grid-template-columns: minmax(min-content, max-content);
   grid-row-gap: 1.5rem;
   justify-content: center; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/my.jpg); } }
   .header__title {
     margin-left: 5rem;
     font-size: 8rem;
@@ -98,14 +98,23 @@ body {
     animation: moveInRight 1.6s;
     animation-delay: .1s; }
   .header__sub-title {
-    margin-bottom: -3rem;
+    margin-top: 15rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
     margin-left: -5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1rem;
     font-weight: 700;
     animation: moveInLeft 1.6s;
     animation-delay: .1s; }
+    @media only screen and (max-width: 43em) {
+      .header__sub-title {
+        margin-left: 0; } }
+    @media only screen and (max-width: 25em) {
+      .header__sub-title {
+        margin-left: 2rem; } }
   .header__btn {
     text-decoration: none;
     display: flex;
@@ -117,6 +126,36 @@ body {
     cursor: pointer;
     transition: all .2s;
     animation: pulsate 1s infinite; }
+  .header__social {
+    display: flex;
+    align-self: flex-end;
+    justify-content: end;
+    margin-right: -20rem; }
+    @media only screen and (max-width: 69em) {
+      .header__social {
+        margin-right: -13rem; } }
+    @media only screen and (max-width: 57em) {
+      .header__social {
+        margin-right: -7rem; } }
+    @media only screen and (max-width: 43em) {
+      .header__social {
+        margin-right: 0; } }
+    @media only screen and (max-width: 25em) {
+      .header__social {
+        margin-right: 2rem; } }
+    .header__social > * {
+      cursor: pointer;
+      margin-top: 2rem;
+      margin-left: 5rem; }
+    .header__social--icon-box {
+      animation: pulsate 1s infinite;
+      font-size: 2.5rem; }
+    .header__social__icon--2 {
+      color: #34af23; }
+    .header__social__icon--1 {
+      color: #517fa4; }
+    .header__social__icon--3 {
+      color: #007bb6; }
 
 .contato__card {
   background-color: #383838;
@@ -231,8 +270,11 @@ textarea.form1 {
     .projeto__name:hover {
       background-color: #28394b; }
 
-footer {
-  display: grid;
-  grid-column: 1 / -1;
-  font-size: 2rem;
-  background-color: #111; }
+/*
+0 - 600px = phone
+600 - 900px = big phone / tablet
+900 - 1200px = big tablet / small desktop
+1200 - 1800px = desktops
+1800px + = big desktops
+*/
+/*phone tab desk big-desk*/

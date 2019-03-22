@@ -1,14 +1,20 @@
 .header {
     grid-column: full-start / full-end;
-    background-image: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url(../img/my.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(../img/my-min.jpg);
     background-size: cover;
     background-position: center;
 
     display: grid;
-    grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+    grid-template-rows: min-content 1fr min-content minmax(6rem, min-content) 1fr;
     grid-template-columns: minmax(min-content, max-content);
     grid-row-gap: 1.5rem;
     justify-content: center;
+
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+        only screen and (min-width: 125em) {background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)),
+            url(../img/my.jpg);}
 
     &__title {
         margin-left: 5rem;
@@ -22,15 +28,26 @@
     }
 
     &__sub-title {
-        margin-bottom: -3rem;
+        margin-top: 15rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: start;
         margin-left: -5rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-transform: uppercase;
         letter-spacing: 1rem;
         font-weight: 700;
 
         animation: moveInLeft 1.6s;
         animation-delay: .1s;
+
+        @media only screen  and (max-width: $bp-smaller) {
+            margin-left: 0; 
+        }
+
+        @media only screen  and (max-width: $bp-mobile) {
+            margin-left: 2rem; 
+        }
     }
 
     &__btn {
@@ -44,5 +61,59 @@
         cursor: pointer;
         transition: all .2s;
         animation: pulsate 1s infinite;
+    }
+
+
+    &__social {
+        
+        display: flex;
+        align-self: flex-end;
+        justify-content: end;
+
+        margin-right: -20rem;
+
+        @media only screen  and (max-width: $bp-medium) {
+            margin-right: -13rem; 
+        }
+
+        @media only screen  and (max-width: $bp-medium-small) {
+            margin-right: -7rem; 
+        }
+
+        @media only screen  and (max-width: $bp-smaller) {
+            margin-right: 0; 
+        }
+
+        @media only screen  and (max-width: $bp-mobile) {
+            margin-right: 2rem; 
+        }
+
+        
+        & > * {
+            cursor: pointer;
+            margin-top: 2rem;
+            margin-left: 5rem;
+        }
+    
+        &--icon-box {
+            animation: pulsate 1s infinite;
+    
+            font-size: 2.5rem;
+        }
+        
+        &__icon { 
+          
+            &--2 {
+                color: #34af23;
+            }
+    
+            &--1 {
+                color: #517fa4;
+            }
+    
+            &--3 {
+                color: #007bb6;
+            }
+        }
     }
 }

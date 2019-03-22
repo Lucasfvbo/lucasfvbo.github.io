@@ -10,6 +10,13 @@ $box: 0 0 1rem .4rem #34495e;
 // FONT VARIABLES
 $font-primary: 'Lato', sans-serif;
 
+// MEDIA QUERIES
+
+$bp-medium: 69em;
+$bp-medium-small: 57em;
+$bp-small: 50em;
+$bp-smaller: 43em;
+$bp-mobile: 25em;
 
 
 *,
@@ -24,6 +31,18 @@ html {
     background-color: $color-primary;
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @media only screen  and (max-width: $bp-medium) {
+        font-size: 56%;
+    }
+
+    @media only screen  and (max-width: $bp-small) {
+        font-size: 50%;
+    }
+
+    @media only screen  and (max-width: $bp-smaller) {
+        font-size: 45%;
+    }
 }
 
 
@@ -37,12 +56,21 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 4rem 80vh; 
+    grid-template-rows: 3rem 90vh; 
 
     grid-template-columns: [full-start] 1fr [center-start] repeat(8, 
     [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 
 }
+
+footer {
+    display: flex;
+    grid-row: 7rem;
+    grid-column: 1 / -1;
+    font-size: 1.2rem;
+    background-color: #111;
+}
+
 
 // ANIMAÇÕES
 
@@ -98,7 +126,7 @@ body {
     }
 
     50% {
-        transform: scale(1.15);
+        transform: scale(1.1);
         color: rgb(25, 25, 216);
     }
 
