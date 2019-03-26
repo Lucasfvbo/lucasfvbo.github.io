@@ -17,6 +17,7 @@ $bp-medium-small: 57em; // 912px
 $bp-small: 50em; // 800px
 $bp-smaller: 45em; // 720px
 $bp-mobile: 30.2em; // 482px
+$bp-super-small: 23.15em; // 370px
 
 
 *,
@@ -67,7 +68,7 @@ body {
 
     @media only screen  and (max-width: $bp-mobile) {
         display: grid;
-        grid-template-rows: 3rem 70vh;
+        grid-template-rows: 3rem 80vh;
     }
 
 }
@@ -143,6 +144,25 @@ footer {
     100% {
         transform: scale(1);
         box-shadow: none;
+    }
+
+}
+
+@keyframes pulsate1 {
+
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 3px 0 #007bb6 inset, 0 0 3px 1.8px #007bb6;
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px 0 #007bb6 inset, 0 0 5px 3px #007bb6;
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 3px 0 #007bb6 inset, 0 0 3px 1.8px #007bb6;
     }
 
 }
