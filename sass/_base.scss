@@ -1,4 +1,4 @@
-$color-primary: rgb(56, 56, 56);
+$color-primary: rgb(5, 5, 5);
 $color-secondary: #56585a;
 
 $color-grey-light-1: #f9f7f6;
@@ -74,9 +74,10 @@ body {
 
 footer {
     display: flex;
-    grid-row: 15rem;
-    grid-column: 1 / -1;
-    font-size: 1.3rem;
+    justify-content: space-evenly;
+    grid-column: full-start / full-end;
+    padding: 1rem;
+    font-size: 1.5rem;
     background-color: #111;
 }
 
@@ -135,7 +136,7 @@ footer {
     }
 
     50% {
-        transform: scale(1.1);
+        transform: scale(1.05);
         color: rgb(25, 25, 216);
     }
 

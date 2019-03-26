@@ -1,6 +1,6 @@
 .header {
     grid-column: full-start / full-end;
-    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(../img/my-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/i-min.jpg);
     background-size: cover;
     background-position: center;
 
@@ -14,7 +14,7 @@
     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
         only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
         only screen and (min-width: 125em) {background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)),
-            url(../img/my.jpg);}
+            url(../img/1.jpg);}
 
     &__title {
         margin-left: 5rem;
