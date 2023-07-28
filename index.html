@@ -1,128 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="PT-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="descrição" content="Lucas Frota é um desenvolvedor web junior, com servições de excelente qualidade.">
-        
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-                
-        <title>Lucas Frota | Web Developer</title>
+        <meta name="descrição" content="Lucas Frota é um engenheiro de software junior de excelente qualidade.">
 
-        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-        <link rel="manifest" href="img/site.webmanifest">
-        <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="img/favicon.ico">
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+        <link rel="manifest" href="assets/img/site.webmanifest">
+        <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
         <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="msapplication-config" content="img/browserconfig.xml">
+        <meta name="msapplication-config" content="assets/img/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
 
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Lucas Frota | Portfolio</title>
     </head>
-
-    <body class="container">
-        <div>
-
-        </div>
-        <header class="header">
-
-                <div class="header__social">
-                        <div class="header__social--icon-box ">
-                            <a href="https://www.instagram.com/lucas_fvbo/" target="Instagram" class="header__social__icon--1"><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="header__social--icon-box">
-                            <a href="https://github.com/Lucasfvbo " target="Github" class="header__social__icon--2"><i class="fab fa-github"></i></a>
-                        </div>
-                        <div class="header__social--icon-box">
-                            <a href="https://www.linkedin.com/in/lucas-frota-342342160/" target="Linkedin" class="header__social__icon--3"><i class="fab fa-linkedin-in"></i></a>
+    <body>
+        <!--=============== HEADER PROFILE ===============-->
+        <header class="profile container">
+            <!-- THEME BUTTON -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__photo-perfil">
+                            <img src="assets/img/hero.png" alt="">
                         </div>
                     </div>
+                    <h2 class="profile__name">Lucas Frota</h2>
+                    <h3 class="profile__profession">_</h3>
 
-            <h3 class="header__sub-title">Desenvolvedor web</h3>
-            <h1 class="header__title">Lucas Frota</h1>
-
-            <button class="header__btn js--scroll-project"> Ver projetos</button>
+                    <ul class="profile__social">
+                        <a href="https://www.instagram.com/lucas_fvbo/" target="_blank" class="profile__social-link"><i class="ri-instagram-line"></i></a>
+                        <a href="https://www.linkedin.com/in/lucas-frota-342342160/" target="_blank" class="profile__social-link"><i class="ri-linkedin-box-line"></i></a>
+                        <a href="https://github.com/Lucasfvbo" target="_blank" class="profile__social-link"><i class="ri-github-line"></i></a>
+                    </ul>
+                </div>
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-title">Olá, tudo bem ?</h3>
+                        <p class="profile__info-description"> Sou um entusiasta, autodidata e aspirante à Engenheiro de Software Junior.
+                            Super interessado em aprender novas tecnologias e linguagens de programação.
+                            Comprometido em desenvolver códigos e sistemas que sejam sustentáveis e escaláveis.
+                            </p>
+                    </div>
+                </div>
+                <div class="profile__buttons">
+                    <a download="" href="assets/pdf/CV Lucas Frota Developer.pdf" class="button">
+                        Download CV <i class="ri-download-line"></i>
+                    </a>
+                    
+                    <div class="profile__buttons-small">
+                        <a href="https://api.whatsapp.com/send?phone=5577991036360&text=Hello" target="_blank" class="button button__small button__gray">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                        <a href="#" class="button button__small button__gray">
+                            <i class="ri-messenger-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </header>
 
-        <section class="projetos js--scroll-end">
-            <div class="projeto">
-                <img src="img/Omnifood-min.png" alt="Omnifood" class="projeto__img">
-                <h5 class="projeto__name"><a class="projeto__name" href="https://lucasfvbo.github.io/Omnifood/" target="Omnifood">Omnifood</a></h5>
-            </div>
-            
-            <div class="projeto">
-                <img src="img/Natours-min.png" alt="Natours" class="projeto__img">
-                <h5 class="projeto__name"><a class="projeto__name" href="https://lucasfvbo.github.io/Natours/" target="__blank">Natours</a></h5>
-            </div>
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#projects">Projetos Pessoais</button>
+                    <button class="filters__button" data-target="#skills">Habilidades</button>
+                </ul>
+                <div class="filters__sections">
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <article class="projects__card">
+                            <img src="assets/img/Natours-min.png" alt="" class="projects__img">
+                            
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Acampamento</span>
+                                    <h3 class="projects__title">Natours</h3>
+                                    <a href="https://lucasfvbo.github.io/Natours/" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
 
-            <div class="projeto">
-                <img src="img/Nexter-min.png" alt="Nexter" class="projeto__img">
-                <h5 class="projeto__name"><a class="projeto__name" href="https://lucasfvbo.github.io/Nexter/" target="__blank">Nexter</a></h5>
-            </div>
+                        <article class="projects__card">
+                            <img src="assets/img/Omnifood-min.png" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Delivery</span>
+                                    <h3 class="projects__title">Omnifood</h3>
+                                    <a href="https://lucasfvbo.github.io/Omnifood/" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
 
-            <div class="projeto">
-                <img src="img/Trillo-min.png" alt="Trillo" class="projeto__img">
-                <h5 class="projeto__name"><a class="projeto__name" href="https://lucasfvbo.github.io/Trillo/" target="__blank">Trillo</a></h5>
-            </div>
+                        <article class="projects__card">
+                            <img src="assets/img/Nexter-min.png" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Imobiliária</span>
+                                    <h3 class="projects__title">Nexter</h3>
+                                    <a href="https://lucasfvbo.github.io/Nexter/" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
 
-            <div class="projeto">
-                <img src="img/inout.png" alt="inout" class="projeto__img">
-                <h5 class="projeto__name"><a class="projeto__name" href="https://lucasfvbo.github.io/InOut/" target="__blank">In & Out</a></h5>
-            </div>
+                        <article class="projects__card">
+                            <img src="assets/img/GamePig-min.png" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Jogo de Dados</span>
+                                    <h3 class="projects__title">Game Pig</h3>
+                                    <a href="https://lucasfvbo.github.io/GamePig/" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
 
-            <div class="projeto">
-                <img src="img/GamePig-min.png" alt="Gamepig" class="projeto__img">
-                <h5 class="projeto__name"><a class="projeto__name" href="https://lucasfvbo.github.io/GamePig/" target="__blank">GamePig - Desktop</a></h5>
-            </div>
+                        <article class="projects__card">
+                            <img src="assets/img/BudGet-min.png" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Planilha orçamentária</span>
+                                    <h3 class="projects__title">Budget</h3>
+                                    <a href="https://lucasfvbo.github.io/InOut/" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
 
-        </section>
+                        <article class="projects__card">
+                            <img src="assets/img/Trillo-min.png" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Hotelaria</span>
+                                    <h3 class="projects__title">Trillo</h3>
+                                    <a href="https://lucasfvbo.github.io/Trillo/" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
 
-        <div id="contact" class="contato__card">
-            <h4 class="contato__card--h-a">Olá, tudo bem?</h4>
-            <p class="contato__card--t-a">
-                Sou desenvolvedor web junior. Atualmente desenvolvo trabalhos como freelancer. <br>
-               <br> Graduando em Tecnologia da Informação como tecnólogo, pelo Centro Universitário Guanambi - UniFG. <br>
-               <br> Faço uso de HTML5, CSS3, JavaScript além de frameworks que venham a ser necessários. <br>
-                <br> Atenciosamente, <br>
-                <br> Lucas F. <br>
-                <br> lucasfvbo1@gmail.com | 77-991.036.360
-            </p>
-        </div> 
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">Tecnologias</h3>
 
-        <div class="contato__text">
-            <h1 class="text">Entre em contato</h1>
-            <form action="index.html" class="form" method="post">
-                <input type="text" class="form1" placeholder="Nome">
-                <input type="email" class="form1" placeholder="Email">
-                <input type="text" class="form1" placeholder="Telefone">
-                <textarea class="form1" placeholder="Deixe sua mensagem"></textarea>
-                <input type="submit" class="cta" value="Enviar">
-            </form>
-        </div>
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
 
-        <footer>
-            <p>Copyright &copy; 2019. By Lucas Frota. All rights reseverd.</p>
-            <a href="https://www.linkedin.com/in/lucas-frota-342342160/" target="Linkedin" class="header__social__icon--3"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/Lucasfvbo " target="Github" class="header__social__icon--2"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/lucas_fvbo/" target="Instagram" class="header__social__icon--1"><i class="fab fa-instagram"></i></a>
+                                        <div>
+                                            <h3 class="skills__name">HTML</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">CSS</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">JAVASCRIPT</h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">C#</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">PYTHON</h3>
+                                        </div>
+                                    </div>                                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; 2023. Lucas F.
+            </span>
         </footer>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="js/jquery.waypoints.min.js"></script>
-        <script src="js/script.js"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136986645-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
 
-  gtag('config', 'UA-136986645-1');
-</script>
-
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
     </body>
-    
 </html>
